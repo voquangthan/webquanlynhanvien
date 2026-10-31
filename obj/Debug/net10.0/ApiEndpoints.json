@@ -1,0 +1,139 @@
+[
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.HomeController",
+    "Method": "laynhanvien",
+    "RelativePath": "api/nhanvien1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.HomeController",
+    "Method": "suanhanvien",
+    "RelativePath": "api/nhanvien1",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nv",
+        "Type": "QuanlynhanvienAPI.Models.Nhanvien",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.HomeController",
+    "Method": "themnhanvien",
+    "RelativePath": "api/nhanvien1",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nv",
+        "Type": "QuanlynhanvienAPI.Models.Nhanvien",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.HomeController",
+    "Method": "xoanhanvien",
+    "RelativePath": "api/nhanvien1",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nv",
+        "Type": "QuanlynhanvienAPI.Models.Nhanvien",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.PhongbanController",
+    "Method": "Themphongbanller",
+    "RelativePath": "api/phongban",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pb",
+        "Type": "QuanlynhanvienAPI.Models.Phongban",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.PhongbanController",
+    "Method": "Getphongbanller",
+    "RelativePath": "api/phongban",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.PhongbanController",
+    "Method": "Suaphongbanller",
+    "RelativePath": "api/phongban",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pb",
+        "Type": "QuanlynhanvienAPI.Models.Phongban",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.PhongbanController",
+    "Method": "Xoaphongbanller",
+    "RelativePath": "api/phongban",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pb",
+        "Type": "QuanlynhanvienAPI.Models.Phongban",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QuanlynhanvienAPI.WeatherForecast, QuanlynhanvienAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

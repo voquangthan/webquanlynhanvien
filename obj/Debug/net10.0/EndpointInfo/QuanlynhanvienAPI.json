@@ -1,0 +1,799 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "QuanlynhanvienAPI | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7079"
+    },
+    {
+      "url": "http://localhost:5064"
+    }
+  ],
+  "paths": {
+    "/api/nhanvien1": {
+      "get": {
+        "tags": [
+          "Home"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Home"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Home"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Home"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Nhanvien"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/phongban": {
+      "post": {
+        "tags": [
+          "Phongban"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Phongban"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Phongban"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Phongban"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Phongban"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Chitietphieunhap": {
+        "type": "object",
+        "properties": {
+          "mapn": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "mavt": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "soluong": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "dongianhap": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "mapnNavigation": {
+            "$ref": "#/components/schemas/Phieunhap"
+          },
+          "mavtNavigation": {
+            "$ref": "#/components/schemas/Vattu"
+          }
+        }
+      },
+      "Loaithietbi": {
+        "type": "object",
+        "properties": {
+          "maloai": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "tenloai": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mota": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "thietbis": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Thietbi"
+            }
+          }
+        }
+      },
+      "Nhacungcap": {
+        "type": "object",
+        "properties": {
+          "mancc": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "tenncc": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "diachi": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "sdt": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "email": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "phieunhaps": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Phieunhap"
+            }
+          }
+        }
+      },
+      "Nhanvien": {
+        "type": "object",
+        "properties": {
+          "manv": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "hoten": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "luong": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "mapb": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "email": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "sdt": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mapbNavigation": {
+            "$ref": "#/components/schemas/Phongban"
+          },
+          "phieunhaps": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Phieunhap"
+            }
+          },
+          "phieuxuats": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Phieuxuat"
+            }
+          },
+          "thietbis": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Thietbi"
+            }
+          },
+          "yeucausuachuas": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Yeucausuachua"
+            }
+          }
+        }
+      },
+      "Phieunhap": {
+        "type": "object",
+        "properties": {
+          "mapn": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "mancc": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "manv": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "ngaynhap": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ghichu": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "chitietphieunhaps": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Chitietphieunhap"
+            }
+          },
+          "manccNavigation": {
+            "$ref": "#/components/schemas/Nhacungcap"
+          },
+          "manvNavigation": {
+            "$ref": "#/components/schemas/Nhanvien"
+          }
+        }
+      },
+      "Phieuxuat": { },
+      "Phongban": {
+        "type": "object",
+        "properties": {
+          "mapb": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "tenpb": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mota": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "nhanviens": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Nhanvien"
+            }
+          }
+        }
+      },
+      "Thietbi": {
+        "type": "object",
+        "properties": {
+          "matb": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "tentb": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "maloai": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "manv": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "null",
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "ngaymua": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date"
+          },
+          "tinhtrang": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "serialnumber": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "maloaiNavigation": {
+            "$ref": "#/components/schemas/Loaithietbi"
+          },
+          "manvNavigation": {
+            "$ref": "#/components/schemas/Nhanvien"
+          },
+          "yeucausuachuas": { }
+        }
+      },
+      "Vattu": {
+        "type": "object",
+        "properties": {
+          "mavt": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "tenvt": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "donvitinh": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "dongia": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "soluongton": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "mota": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "chitietphieunhaps": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Chitietphieunhap"
+            }
+          },
+          "phieuxuats": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Phieuxuat"
+            }
+          }
+        }
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "temperatureF": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "summary": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "Yeucausuachua": {
+        "type": "object",
+        "properties": {
+          "mayc": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "matb": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "manv": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "ngayyeucau": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "motaloi": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "trangthai": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "ngayhoanthanh": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "manvNavigation": {
+            "$ref": "#/components/schemas/Nhanvien"
+          },
+          "matbNavigation": {
+            "$ref": "#/components/schemas/Thietbi"
+          },
+          "phieuxuats": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/Phieuxuat"
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Home"
+    },
+    {
+      "name": "Phongban"
+    },
+    {
+      "name": "WeatherForecast"
+    }
+  ]
+}

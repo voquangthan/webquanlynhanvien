@@ -1,0 +1,118 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "QuanLyNhanVienDBContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "IrregularWords": null,
+   "MinimumProductVersion": "2.6.1777",
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PluralRules": null,
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "QuanlynhanvienAPI",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "SingularRules": null,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[CHITIETPHIEUNHAP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DANGKY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GIANGVIEN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[KETQUA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[KHOA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LOAITHIETBI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LOP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MONHOC]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NHACUNGCAP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NHANVIEN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PHIEUNHAP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PHIEUXUAT]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PHONGBAN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SINHVIEN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[THIETBI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[VATTU]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[YEUCAUSUACHUA]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseInternalAccessModifiersForSprocsAndFunctions": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false,
+   "UseTypedTvpParameters": true
+}
