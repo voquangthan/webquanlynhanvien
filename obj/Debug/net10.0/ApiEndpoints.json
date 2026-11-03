@@ -1,5 +1,63 @@
 [
   {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.LoaithietbiController",
+    "Method": "Get_Ltbcontroll",
+    "RelativePath": "api/loaithietbi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.LoaithietbiController",
+    "Method": "Sualoaithietbi",
+    "RelativePath": "api/loaithietbi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ltb",
+        "Type": "QuanlynhanvienAPI.Models.Loaithietbi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.LoaithietbiController",
+    "Method": "Themloaithietbi",
+    "RelativePath": "api/loaithietbi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ltb",
+        "Type": "QuanlynhanvienAPI.Models.Loaithietbi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.LoaithietbiController",
+    "Method": "Xoaloaithietbi",
+    "RelativePath": "api/loaithietbi",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ltb",
+        "Type": "QuanlynhanvienAPI.Models.Loaithietbi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QuanlynhanvienAPI.Controllers.HomeController",
     "Method": "laynhanvien",
     "RelativePath": "api/nhanvien1",
@@ -110,6 +168,64 @@
       {
         "Name": "pb",
         "Type": "QuanlynhanvienAPI.Models.Phongban",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.ThietbiController",
+    "Method": "Getthietbi",
+    "RelativePath": "api/thietbi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.ThietbiController",
+    "Method": "Themthietbi",
+    "RelativePath": "api/thietbi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "thietbi",
+        "Type": "QuanlynhanvienAPI.Models.Thietbi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.ThietbiController",
+    "Method": "Xoathietbi",
+    "RelativePath": "api/thietbi",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "thietbi",
+        "Type": "QuanlynhanvienAPI.Models.Thietbi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanlynhanvienAPI.Controllers.ThietbiController",
+    "Method": "Suathietbi",
+    "RelativePath": "api/thietbi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "thietbi",
+        "Type": "QuanlynhanvienAPI.Models.Thietbi",
         "IsRequired": true
       }
     ],

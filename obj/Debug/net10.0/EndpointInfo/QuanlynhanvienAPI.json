@@ -115,6 +115,108 @@
         }
       }
     },
+    "/api/loaithietbi": {
+      "get": {
+        "tags": [
+          "Loaithietbi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Loaithietbi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Loaithietbi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Loaithietbi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loaithietbi"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/phongban": {
       "post": {
         "tags": [
@@ -205,6 +307,108 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/Phongban"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/thietbi": {
+      "get": {
+        "tags": [
+          "Thietbi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Thietbi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Thietbi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Thietbi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Thietbi"
               }
             }
           },
@@ -790,7 +994,13 @@
       "name": "Home"
     },
     {
+      "name": "Loaithietbi"
+    },
+    {
       "name": "Phongban"
+    },
+    {
+      "name": "Thietbi"
     },
     {
       "name": "WeatherForecast"

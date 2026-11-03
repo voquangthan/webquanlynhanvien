@@ -12,8 +12,10 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddScoped<Inhanvien, Nhanvienservices>();
 builder.Services.AddScoped<IPhongbancs, Phongbanservices>();
+builder.Services.AddScoped<Iloaithietbi, Loaithietbiservices>();    
+builder.Services.AddScoped<Ithietbi, Thietbiservices>();    
 
-
+///
 builder.Services.AddDbContext<QuanLyNhanVienDBContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")

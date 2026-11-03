@@ -21,14 +21,28 @@ namespace QuanlynhanvienAPI.Controllers
         [HttpPut]
         public IActionResult suanhanvien([FromBody] Nhanvien nv)
         {
-           _inv.suanhanvien(nv);
-            return Ok(nv);
+            try
+            {
+                _inv.suanhanvien(nv);
+                return Ok(nv);
+            }catch (Exception ex)
+            {
+                return Conflict(ex.Message);
+            }
         }
+
         [HttpPost]
         public IActionResult themnhanvien([FromBody] Nhanvien nv)
         {
-            _inv.themnahnvien(nv);
-            return Ok(nv);
+            try
+            {
+                _inv.themnahnvien(nv);
+                return Ok(nv);
+            }
+            catch (Exception ex)
+            {
+               return Conflict(ex.Message);
+            }
         }
         [HttpDelete]
         public IActionResult xoanhanvien([FromBody] Nhanvien nv)

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using QuanlynhanvienAPI.Models;
+using System.Diagnostics.Eventing.Reader;
 namespace QuanlynhanvienAPI.Services
 {
     public class Nhanvienservices:Inhanvien
@@ -18,6 +19,11 @@ namespace QuanlynhanvienAPI.Services
         }
         public void themnahnvien(Nhanvien nv)
         {
+            bool kiemtra=_dbContext.Nhanviens.Any(x=>x.Manv==nv.Manv);
+            if(kiemtra==true)
+            {
+                throw new Exception("mã nhân viên đã tồn tại");
+            }
             _dbContext.Nhanviens.Add(nv);
             _dbContext.SaveChanges();
         }
@@ -28,6 +34,11 @@ namespace QuanlynhanvienAPI.Services
         }
         public void suanhanvien(Nhanvien nv)
         {
+            bool kiemtra=_dbContext.Nhanviens.Any(x=>x.Manv== nv.Manv);
+            if (kiemtra == true)
+            {
+                throw new KeyNotFoundException("ko tìm thấy mã nhân viên!");
+            }
             _dbContext.Nhanviens.Update(nv);
             _dbContext.SaveChanges();
         }
